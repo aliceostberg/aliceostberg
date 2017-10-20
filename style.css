@@ -1,0 +1,464 @@
+
+.dropbtn {
+	font-family: futura;
+    background-color: white;
+    color: gold;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.dropdown {
+	position: absolute;
+	margin-left: auto;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-family: futura;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: aliceblue;
+}
+
+body{
+	border-style: solid;
+	border-width: 10px;
+	border-color:white;
+}
+
+ul{
+	padding: 0px;
+	margin:0px;
+	background-color: white;
+}
+h1{
+	font-family: futura;
+	font-size: 50px;
+	color:white;
+	;
+
+}
+
+#table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+#centeralign {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/*div{
+float: absolute;
+position: right;
+
+}*/
+
+
+#typing{
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  font-size: 30pt;
+  margin-bottom: 15px;
+}
+
+
+#info{
+  text-align: center;
+  /*text-transform: lowercase;*/
+  font-family: futura;
+  font-size: 10pt;
+  font-weight: 900;
+  width: 50%;
+  display: none;
+}
+
+#picMe{ 
+	display: block;
+	margin-left: auto;
+
+}
+
+
+#firstPage{
+	/*background-color: orange;*/
+}
+
+
+#secondPage{
+	/*background-color: sandybrown;*/
+}
+
+#CV{
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#thirdPage{
+	/*background-color: lightsalmon; */
+}
+
+h2{
+	font-family: futura;
+	text-align: center;
+	padding: 50px;
+
+}
+
+h3{
+	font-family: futura;
+	text-align: center;
+	padding: 50px;
+	font-family: 'Oxygen Mono', monospace;
+  color: #999;
+
+}
+
+#id{
+	color: black;
+}
+
+
+/*-------------------------------timeline------------------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#body {
+  font: normal 16px/1.5 "futura", sans-serif;
+  background: white;
+  color: white;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}  /* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: white;
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#header {
+  font-size: 2.5rem;
+  color:gold;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  background: gold;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F45B69;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #F45B69;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+}
+
+/* CV
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#bodyCV{
+  font-family: futura, sans-serif;
+  font-size: 16px;
+  color:black;
+}
+
+.interests{
+  color: black;
+  font-family: futura; 
+}
+
+#Headline{
+	color: gold;
+}
+
+.page-header {
+  background-color: white;
+  color: gold;
+  margin-top: 0;
+  text-align: center;
+  padding:7.5% 0;
+}
+
+footer {
+  background-color: #F45B69;
+  text-align: center;
+  color: white;
+  padding: 2.5%;
+}
+footer a {
+  color: white;
+  border-bottom: 1px dotted white;
+}
+footer a:hover, footer a:active, footer a:focus {
+  color: white;
+  border-bottom: 1px solid white;
+  text-decoration: none;
+}
+
+.text-picture {
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+.text-picture.text-picture--gray-bg {
+  background-color: #EEE;
+}
+.text-picture .text-picture__text h2 {
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .text-picture .text-picture__text p:last-child {
+    margin-bottom: 0;
+  }
+}
+.text-picture .text-picture__picture {
+  text-align: center;
+}
+.text-picture .text-picture__picture img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 758px) {
+  .row--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .row--flex .row--flex__col {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .row--flex .row--flex__col--center {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .row--flex .row--flex__col--bottom {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+/* Travelling
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#travel-header{
+	color:black;
+	font-size: 20px;
+	font-family: futura;
+
+}
+
+#bodyTravel{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'PT Sans';
+  font-size: 18px;
+}
+
+.tiles {
+  padding: 6vh 16vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.tile {
+  margin: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 18vw;
+  height: 18vw;
+}
+.tile img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+.tile img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+
+}
