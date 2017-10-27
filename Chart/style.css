@@ -1,0 +1,55 @@
+#facts {
+  font-family: Futura, sans-serif;
+  text-align: center;
+  background-image: url(https://i.pinimg.com/564x/3d/c4/32/3dc432ebf265f3649c2d8c35dd96e67d.jpg);
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+#tech {
+  font-weight: 500;
+  font-size: 4em;
+  text-transform: uppercase;
+  color: Black;
+  padding: cover;
+}
+
+#edu{
+  font-weight: 500;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: Black;
+  padding: cover;
+}
+
+#top4 {
+  font-weight: 200;
+  font-size: 0.9em;
+  margin: 0 0 50px;
+  color: grey;
+}
+
+#quote{
+  color: grey;
+  font-weight: 100;
+
+}
+
+#mychart{
+  
+}
+
+a {
+  margin-top: 50px;
+  display: block;
+  color: #3e95cd;
+}
+
+#emoji{
+height: 20px;
+width: 20px;
+}
